@@ -1,0 +1,3 @@
+/home/rhein/Desktop/TempTest/Transcoding/CMakeFiles/rebuild_cache.dir
+/home/rhein/Desktop/TempTest/Transcoding/CMakeFiles/edit_cache.dir
+/home/rhein/Desktop/TempTest/Transcoding/CMakeFiles/transcoding.dir
