@@ -3,6 +3,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <fstream>
+#include <math.h>
 
 using namespace cv;
 using namespace std;
@@ -67,11 +68,8 @@ void cartesian2coordinates(double x, double y, double z, double result[2]){
     } else {
         the = toRadian(90.0);
     }
-    double phi = acos(z);
 
-    if(z == 1.0f || z == -1.0f){
-        printf("%lf\n", phi);
-    }
+    double phi = acos(z);
 
     spherical2coordinates(the, phi, result);
 }
@@ -127,9 +125,13 @@ void convert_cube_uv_to_xyz(int index, double u, double v, double cartesian[3]){
 
   }
 
-  cartesian[0] = x;
-  cartesian[1] = y;
-  cartesian[2] = z;
+  double xp = x * sqrt(1 - y*y/2.0 - z*z/2.0 + y*y*z*z/3.0);
+  double yp = y * sqrt(1 - z*z/2.0 - x*x/2.0 + z*z*x*x/3.0);
+  double zp = z * sqrt(1 - x*x/2.0 - y*y/2.0 + x*x*y*y/3.0);
+
+  cartesian[0] = xp;
+  cartesian[1] = yp;
+  cartesian[2] = zp;
 
 }
 
