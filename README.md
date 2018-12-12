@@ -1,6 +1,6 @@
 # transcoding
 
-This is a transcoding for panoramic images. It could convert images in Equirectangular projection to cube map.
+This is a transcoder for panoramic images. It could convert images in Equirectangular projection to Cube Maps.
 
 ```sh
 $cmake .
