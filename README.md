@@ -10,9 +10,9 @@ $./transcoding input.jpg
 
 Layout of output Cube map:
 
-| Left | | Right | |  Up  |
-
-| Down | | Front | | Back |
+|Left|Right|Up|
+|:-:|:-:|:-:|
+|Down|Front|Back|
 
 
 
