@@ -12,7 +12,7 @@ Layout of output Cube map:
 
 |Left|Right|Up|
 |:-:|:-:|:-:|
-|Down|Front|Back|
+|**Down**|**Front**|**Back**|
 
 
 
